@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Daily a Worker</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link href="style.css"  rel="stylesheet"  />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
+	</head>
+	<body>
+		
+			<nav class="navbar">
+				<a href="index.html"> <img class="logo" src="img/dw-logo.png" width="250px"/></a> 
+				<ul class="nav-links">
+					<li  class="active"><a href="index.html"></a>Home</li>
+					<li><a href="#about"></a >About</li>
+					<li><a href="index-1.html"></a>Worker</li>
+					<li><a href="index-2.html"></a>Customer</li>
+				</ul>
+				<img src="img/menu-button.png" alt="" class="menu-btn">
+			</nav>
+		<header>
+			<div class="header-content">
+				<h1 class="title-frist">Hi there!</h1>
+				<h1 class="title-second">WELCOME <br>TO DAILY A WORKER</h1>
+				<div class="line"></div>
+				<h2>Easy to give work <br> Faslty to find worker</h2>
+				<a href="index-1.html" class="ctn">Get Work</a>
+			</div>
+		</header>
+		
+		<section class="about">
+			<div class="title">
+				<div class="bar-left"></div>
+				<h1 class="about-centre">About</h1>
+				<div class="bar-right"></div>
+			</div>
+			<div class="col">
+				<img src="img/COSTUMER-1.jpg" alt="">
+				<p>We offer a service to clients who require a day,<br> week or month of work.
+				<br>Also workers they can see what you need for service and take this job,<br>you could chat.
+				</p>
+				<img src="img/how_to_hire_in_construction.png"  alt="">
+			</div>
+		</section>
+		<section class="use">
+			<div class="title">
+				<div class="bar-left"></div>
+				<h1 class="about-centre">How you use</h1>
+				<div class="bar-right"></div>
+			</div>
+			<div class="row">
+				<video controls>
+  				<source src="img/jobs.mp4" type="video/mp4">
+				<source src="movie.ogg" type="video/ogg">
+				</video>
+			</div>
+		</section>
+		<footer>
+			<div class="info">
+				<p>help and infomation
+				<br><br>
+				application is coming soon</p>
+			</div>
+			<div class="social-media">
+				<p>Follow us on:</p>
+				<div class="icon-wrapper">
+					<i class="fa fa-twitter icon" style="font-size:45px;color: aqua;"></i>
+					<i class="fa fa-instagram icon" style="font-size:45px;color: orangered;"></i>
+					<i class="material-icons icon" style="color: darkblue">facebook</i>
+				</div>
+			</div>
+		</footer>
+		<script>
+			const menuBtn = document.querySelector('.menu-btn')
+			const navlinks = document.querySelector('.nav-links')
+			
+			menuBtn.addEventListener('click',()=>{navlinks.classList.toggle('mobile-menu')
+			})
+		</script>
+		
+	
+	</body>
+</html>

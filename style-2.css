@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+ 
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: Linear-gradient(to right,  #CE9592 0%,#FFAD59 100%);
+}
+.bar-logo {
+	text-align: center;
+	margin: 20px auto 40px;
+}
+
+.wrapper {
+    padding: 20px;
+    background: #FFF;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    width: 600px;
+    min-height: 400px;
+    margin: 20px 0;
+	border-radius: 10px;
+}
+
+.wrapper .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.wrapper .form .row .input-group {
+    padding: 0 10px;
+    display: block;
+	
+}
+
+.wrapper .form .row .input-group:nth-child(1), .wrapper .form .row .input-group:nth-child(3), .wrapper .form .row .input-group:nth-child(5) {
+    padding-left: 0px;
+}
+
+.wrapper .form .row .input-group:th-child(2), .wrapper .form .row .input-group:th-child(4), .wrapper .form .row .input-group:nth-child(6) {
+    padding-right: 0;
+}
+
+select{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	appearance:none;
+	outline: 0;
+	box-shadow: none;
+	border:0!important;
+	background: #CE9592;
+	background-image: none;
+	flex: 1;
+	padding:  0.5em;
+	color: #eee;
+	cursor: pointer;
+}
+select::-ms-expand{
+	display: none;
+}
+.wrapper .form .row .choose{
+	text-align: center;
+	position: relative;
+	display: flex;
+	width: 100%;
+    height: 50px;
+	line-height: 3;
+	background: #CE9592;
+	overflow: hidden;
+	border-radius: 10px;
+	
+}   
+.choose::after {
+	content: '\25BC';
+	position: absolute;
+	top: 1.5px;
+	right: 0;
+	padding: 0 0.5em;
+	background: #FFAD59;
+	cursor: pointer;
+	pointer-events: none;
+	transition: .25s all ease;
+}
+.wrapper .form .row .choose:hover::after {
+	color: #eee;
+	
+}
+.wrapper .form .input-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+	
+}
+
+.wrapper .form .input-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+	
+}
+
+.wrapper .form .input-group .btn {
+    margin: 20px 0;
+    display: block;
+    padding: .7rem 2rem;
+    opacity: .8;
+    color: #FFF;
+    background: Linear-gradient(to left,  #CE9592 0%,#FFAD59 100%);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: .3s ease-in;
+	border-radius: 10px;
+}
+
+.wrapper .form .input-group .btn:hover {
+    opacity: 1;
+	background-image: Linear-gradient(to right,  #CE9592 0%,#eee 50%,#FFAD59 100%);
+}
+
+
+
+
+
+
+
+
+
+
+.file-img p{
+	 font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+input[type="file"]{
+	display: none;
+}
+
+.file-img .input-group{
+	color: #eee;
+	width: 100%;
+    height: 50px;
+	background-color: #CE9592;
+	position: relative;
+	display: flex;
+	
+	border-radius: 10px;
+	padding:  0.5em;
+	font-size: 0.8rem;
+	 cursor: pointer;
+	  
+	
+}
+
+
+
+
+
+.wrapper .form .input-group input, .wrapper .form .input-group textarea {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #CE9592;
+    outline: none;
+    padding: 5px 10px;
+	border-radius: 10px;
+}
+
+.wrapper .form .input-group.textarea {
+    height: 200px;
+}
+
+.wrapper .form .input-group.textarea textarea {
+    resize: none;
+}
+
+
+
+.wrapper .prev-comments {
+    margin-top: 50px;
+}
+
+.wrapper .prev-comments .single-item {
+    background: #FFF;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    padding: 10px 20px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.wrapper .prev-comments .single-item h4 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #111;
+}
+
+.wrapper .prev-comments .single-item a {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #111;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.wrapper .prev-comments .single-item p {
+    font-size: .9rem;
+    color: #111;
+}
